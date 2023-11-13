@@ -1,9 +1,12 @@
+console.log("hello world");
+
 //No need to do any work here.
 //If package.json and the proper modules are installed in the correct location, this should display correctly in the browser.
 import format from "./node_modules/date-fns/esm/format/index.js";
 
 function displayTime() {
   const clock = document.querySelector("#clock");
+  console.log(clock)
   clock.textContent = format(new Date(), "MMMM do yyyy, h:mm:ss a");
   setInterval(function () {
     clock.textContent = format(new Date(), "MMMM do yyyy, h:mm:ss a");
